@@ -1,0 +1,30 @@
+.footer_background{
+    background-image: url("../img/background.png");
+}
+.box_input{
+    background-color: whitesmoke;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+.input_footer{
+    margin-right: 10px;
+    border-radius: 0px;
+    padding:10px 15px;
+    min-width: 100px;
+    border: 2px solid rgb(179, 175, 175);
+}
+.button_footer{
+    padding:10px 40px;
+    border: 2px solid rgba(51, 51, 51, 1);
+    background-color: rgba(51, 51, 51, 1);
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.7s;
+}
+.button_footer:hover{
+    color: rgba(51, 51, 51, 1);
+    background-color: whitesmoke;
+    border: 2px solid rgba(51, 51, 51, 1);
+    transition: 0.7s;
+}

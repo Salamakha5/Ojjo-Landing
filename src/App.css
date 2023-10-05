@@ -1,0 +1,336 @@
+.App {
+  text-align: center;
+}
+*{
+  font-family: Andale Mono, monospace;
+  font-weight: 400;
+}
+.navbar{
+  background-color: #383839;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.w14{
+  width:44px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.img_container{
+  height: 100vh;
+  background-image: url(.././public/bgc.png);
+  background-position: center;
+  background-size:cover;
+}
+.nav-info{
+  position: absolute;
+  bottom: 0px;
+}
+.castom-button{
+  text-decoration: none;
+  width:max-content;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+.castom-button:hover{
+  background-color: whitesmoke;
+  color: #282c34;
+  border: 2px solid #282c34;
+  transition: 0.3s;
+}
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.select{
+  width: max-content;
+  padding:7px 30px;
+  background-color: whitesmoke;
+  border: rgb(197, 196, 196) 2px solid;
+  position: relative;
+  text-decoration: none;
+  color:black;
+  transition: 0.5s;
+}
+.child_select{
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  position: absolute;
+  top:6px;
+  left:5px;
+  z-index: -1;
+  border: 1px solid rgb(197, 196, 196);
+  transition: 0.3s;
+}
+.select:hover .child_select{
+  top: 0px;
+  left: 0px;
+  transition: 0.5s;
+}
+.select:hover{
+  background-color: #282c34;
+  color: whitesmoke;
+  transition: 0.5s;
+}
+
+.smollScreen{
+  background-color:#3a3b3b;
+  border-radius: 20px;
+  z-index: 1;
+}
+.font-1{
+  font-family: Noto Serif
+  ;
+}
+.iconsSize{
+  width: 30px;
+  height: 30px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.link{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 21px;
+  padding:0px 10px;
+}
+.link:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px; /* Высота линии */
+    background-color:white; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.link:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px; /* Высота линии */
+    background-color:white; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+.linkBlack{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  position: relative;
+  cursor: pointer;
+  width: max-content;
+  line-height: 21px;
+  padding:0px 10px;
+}
+.linkBlack:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px; /* Высота линии */
+    background-color:rgb(0, 0, 0); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.linkBlack:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px; /* Высота линии */
+    background-color:rgb(0, 0, 0); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+
+.icons_container{
+  margin: 10px;
+}
+.icons_container:hover{
+  opacity: 0.7;
+}
+.opas:hover{
+  opacity: 0.7;
+}
+.left_links{
+  display: flex;
+  justify-content: space-around;  
+}
+.right_links{
+  display: flex;
+  justify-content: space-around;  
+}
+.burger{
+  display: none;
+}
+.burger_container{
+  display: none;
+}
+.logo_container{
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1080px){
+  .left_links{
+    display: none;
+  }
+  .right_links{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  .burger_container{
+    display: flex;
+    justify-content: center;
+  }
+  .logo{
+    width:100%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 370px){
+  .logo_container,.hideText{
+    display: none;
+  }
+}
+@media (min-width: 1080px){
+  .smollScreen{
+    display: none;
+  }
+}
+
+.imgcontainer{
+  position: relative;
+  width: max-content;
+  background-color:#3a3b3b;
+}
+
+.label_img{
+  font-size: 30px;
+  color: whitesmoke;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  bottom:30px;
+}
+.image{
+  transition: 0.5s;
+}
+.image:hover{
+  transition: 0.5s;
+  opacity: 0.3;
+} 
+.background{
+  background-image:url(./img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.button1,.button2{
+  font-size: 25px;
+  background-color:whitesmoke;
+  padding: 10px 40px;
+  text-decoration: none;
+  color:black;
+  border: 2px solid whitesmoke;
+  margin-bottom:40px;
+  transition: 0.5s;
+}
+.button1:hover{ 
+  color: whitesmoke;
+  background-color: black;
+  border: 2px solid whitesmoke;
+  transition: 0.5s;
+}
+.button2{
+  background-color: rgba(51, 51, 51, 1);
+  color: whitesmoke;
+  transition: 0.7s;
+}
+.button2:hover{
+  background-color:whitesmoke;
+  color: rgba(51, 51, 51, 1);
+  transition: 0.7s;
+  border: 2px solid rgba(51, 51, 51, 1);
+
+}
+.playcont{
+  position: relative;
+}
+.playsvg{
+  position: absolute;
+  left: 44%;
+  top: 44%;
+}
+.minSize{
+  min-width: 150px;
+}
+.minw{
+  width: min-content;
+  margin-top: 25px;
+}
+.minh{
+  height: min-content;
+}
+.openinfo{
+
+  transition: 0.7s;
+}
+.openinfo:hover{
+  transition: 0.3s;
+  color: #61dafb;
+  width: max-content;
+  cursor:pointer;
+}
